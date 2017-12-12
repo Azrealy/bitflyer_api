@@ -4,7 +4,7 @@ import hashlib
 
 class Authentication(object):
     
-    def __init__(self, secret, request_path, method="GET", request_body=""):
+    def __init__(self, secret, request_path, method, request_body):
         self.secret = secret
         self.method = method
         self.request_path = request_path
