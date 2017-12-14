@@ -78,7 +78,7 @@ def request():
     http_client = tornado.httpclient.AsyncHTTPClient()
     http_response = yield json_fetch(http_client)
     print(http_response.body)
-"""
+
 if __name__ == "__main__":
     #tornado.options.parse_command_line()     
     time_before_exec = datetime.now()
@@ -88,3 +88,4 @@ if __name__ == "__main__":
     #tornado.ioloop.IOLoop.instance().run_sync(request)
     time_after_exec = datetime.now()
     print(time_after_exec - time_before_exec)
+    """
